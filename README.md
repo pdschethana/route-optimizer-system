@@ -65,7 +65,7 @@ http://localhost:8080/api
 
 ### Endpoints
 
-#### GET /api/route/optimize
+#### Method : GET - URL : http://localhost:8080/api/route/optimize
 Returns the optimized route for all pending jobs.
 
 **Response:**
@@ -139,7 +139,9 @@ Returns the optimized route for all pending jobs.
 }
 ```
 
-#### GET /api/route/health
+#### Method : GET –
+ URL : http://localhost:8080/api/route/health
+
 Health check endpoint.
 
 Response: Route Optimizer API is running ✅
@@ -154,7 +156,18 @@ Uses the Nearest Neighbor algorithm:
 3. Visit it, then repeat until all jobs are visited
 4. Returns the ordered visit sequence
 
----
+## Why Leaflet.js Instead of Google Maps
+
+This project uses **Leaflet.js** with **OpenStreetMap** tiles instead of Google Maps because:
+
+- ✅ Completely **free** — no credit card required
+- ✅ No API key needed
+- ✅ OpenStreetMap data is open-source
+- ✅ Leaflet is the most popular open-source map library
+- ✅ Supports markers, polylines, popups — everything needed for route display
+
+Google Maps requires a billing account and charges after free tier limits.
+Leaflet + OpenStreetMap has no such restrictions.
 
 ## Running Tests
 
